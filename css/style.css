@@ -1,0 +1,45 @@
+.container {
+    max-width: 700px;
+}
+
+.todo-row {
+    display: flex;
+}
+
+.todo-row-content {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.todo-done {
+    text-decoration: line-through;
+}
+
+.bounce {
+    animation: bounce 1s ease;
+}
+
+@keyframes bounce {
+    20% {
+        transform: scale(1.1);
+    }
+    40% {
+        transform: rotate(-15deg) scale(1.1);
+    }
+    50% {
+        transform: rotate(15deg) scale(1.1);
+    }
+    60% {
+        transform: rotate(-15deg) scale(1.1);
+    }
+    80% {
+        transform: rotate(0deg) scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
